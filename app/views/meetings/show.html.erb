@@ -20,5 +20,10 @@
   <%= @meeting.meeting_password %>
 </p>
 
+<%= link_to 'Join Now', attend_session_path(record_id: @meeting.id) %>
+<br>
+<br>
+<br>
+
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>

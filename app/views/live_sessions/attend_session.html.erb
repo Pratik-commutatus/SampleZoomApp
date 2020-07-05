@@ -1,0 +1,8 @@
+<p>Username:<p>
+<%= @meeting.username%>
+<br>
+<br>
+<p>User Email:<p>
+<%= @meeting.user_email%>
+
+<%= link_to 'Attend Session', '', id: "attend_session", 'data-meeting-id': "#{@meeting.meeting_id}", 'data-password': "#{@meeting.meeting_password}", 'data-username': "#{@meeting.username}", 'data-email': "#{@meeting.user_email}"%>
